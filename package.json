@@ -1,0 +1,39 @@
+{
+  "name": "shopsmanager",
+  "version": "1.0.0",
+  "description": "A simple Nodejs/MongooDB/HTML/CSS/JQuery Shops Manager website",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.1.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-validator": "^6.1.1",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razorcell/ShopsManager.git"
+  },
+  "keywords": [
+    "ShopsManager",
+    "Website"
+  ],
+  "author": "Khalifa Rmili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razorcell/ShopsManager/issues"
+  },
+  "homepage": "https://github.com/razorcell/ShopsManager#readme"
+}
