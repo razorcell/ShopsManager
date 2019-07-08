@@ -1,0 +1,31 @@
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+
+<div class="row el-element-overlay">
+    {{#each shops_array}}
+    <div class="col-lg-3 col-md-6 shopcard">
+        <div class="card">
+            <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1"> <img src="assets/images/big/{{this.name}}.jpg" alt="user" />
+                </div>
+                <div class="el-card-content">
+                    <h4 class="m-b-0"> {{this.name}}</h4>
+                    </br>
+                    <h5 class="m-b-0"> Distance : {{this.distance}} m</h5>
+                    </br>
+                    <span class="text-muted">
+                        <button status="Like" shop_name="{{this.name}}" distance="{{this.distance}}" type="button"
+                            class="btn btn-info status_button">Like&nbsp;<i class="mdi mdi-thumb-up"></i></button>
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->
