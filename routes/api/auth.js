@@ -60,10 +60,11 @@ router.post(
           id: user.id
         }
       };
+      //Build the JWT
       jwt.sign(
         payload,
         config.get("jwtSecret"),
-        { expiresIn: 360000 },
+        { expiresIn: 9000000 },
         (err, token) => {
           if (err) throw err;
           res.cookie("token", token, {
@@ -72,7 +73,7 @@ router.post(
           res.cookie("email", email, {
             expires: new Date(Date.now() + 9000000)
           });
-          // res.json({ token });
+          //Redirect the User to the Home page
           res.redirect("/");
         }
       );
