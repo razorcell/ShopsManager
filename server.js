@@ -30,8 +30,6 @@ app.use("/disliked", require("./routes/frontend/disliked"));
 app.use("/api/shop", require("./routes/api/shop"));
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
-app.use("/api/profile", require("./routes/api/profile"));
-
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
 
